@@ -1,6 +1,6 @@
 SELECT * FROM TD_SYSGPL.ExecR (
   ON (SELECT * FROM twm_customer_analysis_train) 
-    PARTITION BY ANY     -- data and partitioning
+  PARTITION BY ANY     -- data and partitioning
   USING
      -- to define output schema
     Contract(' 
